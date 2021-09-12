@@ -1,4 +1,8 @@
 {
+  "exclude": [
+    ".*types.ts$",
+    ".*.test.ts$"
+  ],
   "jsc": {
     "parser": {
       "syntax": "typescript",

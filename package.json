@@ -5,29 +5,26 @@
   "main": "built/index.js",
   "author": "Seia-Soto <seia@outlook.kr>",
   "private": true,
-  "engines": {
-    "node": ">= 14.16 <15"
-  },
   "scripts": {
-    "build": "swc src --out-dir built --sync && tsc --pretty --skipLibCheck --noEmit",
-    "build:watch": "concurrently 'swc src -w --out-dir built --sync' 'tsc -w --pretty --skipLibCheck --noEmit'",
+    "build": "rm -rf built && swc src --out-dir built --sync && tsc --pretty --skipLibCheck --declaration --emitDeclarationOnly",
+    "build:watch": "concurrently 'swc src -w --out-dir built --sync' 'tsc -w --pretty --skipLibCheck --declaration --emitDeclarationOnly'",
     "release": "standard-version",
     "lint": "eslint --ext .js,.ts src"
   },
   "devDependencies": {
-    "@swc/cli": "^0.1.46",
-    "@swc/core": "^1.2.66",
-    "@typescript-eslint/eslint-plugin": "^4.28.4",
-    "@typescript-eslint/parser": "^4.28.4",
+    "@swc/cli": "^0.1.49",
+    "@swc/core": "^1.2.85",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
     "chokidar": "^3.5.2",
-    "concurrently": "^6.2.0",
-    "eslint": "^7.31.0",
-    "eslint-config-standard-with-typescript": "^20.0.0",
-    "eslint-import-resolver-node": "^0.3.4",
-    "eslint-plugin-import": "^2.23.4",
+    "concurrently": "^6.2.1",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "standard-version": "^9.3.1",
-    "typescript": "^4.3.5"
+    "typescript": "^4.4.3"
   }
 }
