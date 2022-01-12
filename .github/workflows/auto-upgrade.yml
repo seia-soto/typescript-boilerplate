@@ -16,10 +16,10 @@ jobs:
         with:
           node-version: 16.x
 
-      - name: Cache node_modules
+      - name: Cache dot-yarn
         uses: actions/cache@v1
         with:
-          path: node_modules
+          path: .yarn
           key: ${{runner.OS}}-build-${{hashFiles('**/yarn.lock')}}
           restore-keys: |
             ${{ runner.OS }}-build-${{ runner.OS }}-
