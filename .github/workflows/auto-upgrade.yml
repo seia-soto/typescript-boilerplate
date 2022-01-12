@@ -24,14 +24,12 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-build-${{ runner.OS }}-
 
-      - name: Install dependencies
-        run: yarn
-
       - name: Upgrade
         run: |
           yarn set version berry && \
           yarn && \
-          yarn up "**"
+          yarn up "**" \
+          yarn dlx @yarnpkg/sdks vscode
 
       - name: Commit
         uses: EndBug/add-and-commit@v7 # You can change this to use a specific version.
