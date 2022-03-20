@@ -13,9 +13,9 @@
   },
   "devDependencies": {
     "@swc/cli": "^0.1.55",
-    "@swc/core": "^1.2.154",
-    "@typescript-eslint/eslint-plugin": "^5.14.0",
-    "@typescript-eslint/parser": "^5.14.0",
+    "@swc/core": "^1.2.159",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
     "eslint": "^8.11.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-import-resolver-node": "^0.3.6",
