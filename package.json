@@ -5,7 +5,7 @@
   "main": "built/index.js",
   "author": "Seia-Soto <seia@outlook.kr>",
   "private": true,
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "yarn@3.2.2",
   "scripts": {
     "build": "rm -rf built && swc src --out-dir built && tsc --pretty --skipLibCheck --declaration --emitDeclarationOnly",
     "release": "standard-version",
@@ -13,9 +13,9 @@
   },
   "devDependencies": {
     "@swc/cli": "^0.1.57",
-    "@swc/core": "^1.2.215",
-    "@typescript-eslint/eslint-plugin": "^5.30.6",
-    "@typescript-eslint/parser": "^5.30.6",
+    "@swc/core": "^1.2.218",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
     "eslint": "^8.20.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-import-resolver-node": "^0.3.6",
